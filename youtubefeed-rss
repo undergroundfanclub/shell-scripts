@@ -1,0 +1,3 @@
+#!/bin/bash
+cat subscriptions.json | grep "channelId" | sed 's/"//g' | sed 's/,//g' | sed 's/channelIds//g' |
+sed 's/ //g' | sed 's/channelId://g' | cat
